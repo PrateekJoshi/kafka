@@ -1,3 +1,10 @@
+# NOTES
+
+
+## Courses
+
+[Udemy - Apache Kafka Series - Learn Apache Kafka for Beginners v2](https://www.udemy.com/course/apache-kafka/)
+
 ## Refrence and Important Kafka links
 
 1) [Kafka playlists - Learning Journal - Youtube](https://www.youtube.com/c/LearningjournalIn/playlists)

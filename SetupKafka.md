@@ -56,5 +56,48 @@ log.dirs=/home/prateek/Softwares/kafka_2.13-2.7.0/data/kafka
 kafka-server-start.sh config/server.properties 
 ```
 
+## Other Options to run Kafka
 
+1) __Confluent CLI : Single node development environment setup__ :
 
+![](./resources/c1.png)
+
+2) __Multi broker setup__ :
+
+    i) Copy 2 more copies of `server.properties`.
+
+    ![](./resources/c2.png)
+
+    ii) Change the `broker.id` and `log.dirs` each each of the `server.properties` . Also assign a diffrent port to each server.
+
+    ![](./resources/c3.png)
+
+    ![](./resources/c4.png)
+
+    ![](./resources/c5.png)
+
+    ![](./resources/c6.png)
+
+    ![](./resources/c7.png)
+
+    iii) Create data directory for each of the server
+
+    ![](./resources/c8.png)
+
+    iv) Start the Zookeeper.
+
+    ![](./resources/c9.png)
+
+    v) Run the 3 servers by providing corresponding `server.properties` file.
+
+    ![](./resources/c10.png)
+
+    ![](./resources/c11.png)
+
+    ![](./resources/c13.png)
+
+    vi) Verify multiple brokers are available.
+
+    ![](./resources/c12.png)
+
+3) __Using Docker__ : https://github.com/conduktor/kafka-stack-docker-compose
