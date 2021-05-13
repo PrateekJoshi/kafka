@@ -168,7 +168,7 @@ int main(int argc, char **argv)
 													 * the message to a topic based on the message key or random partition
 													 * if key is not set
 													 */
-												   RdKafka::Topic::PARTITION_UA,
+												   RdKafka::Topic::PARTITION_UA,			// partition where to send the message
 												   /* Make a copy of the value */
 												   RdKafka::Producer::RK_MSG_COPY,
 												   /* Value */
