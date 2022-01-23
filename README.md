@@ -1,53 +1,15 @@
 # Kafka
 
-![](./resources/1.png)
+## Articles 
 
-![](./resources/2.png)
+[What makes Apache Kafka so fast](https://www.freecodecamp.org/news/what-makes-apache-kafka-so-fast-a8d4f94ab145/)
 
-![](./resources/3.png)
+## Talks
 
-![](./resources/4.png)
+## References
 
-![](./resources/5.png)
+## Books
 
-![](./resources/6.png)
+## Video courses
 
-![](./resources/7.png)
-
-![](./resources/8.png)
-
-![](./resources/9.png)
-
-![](./resources/10.png)
-
-![](./resources/11.png)
-
-![](./resources/12.png)
-
-![](./resources/13.png)
-
-![](./resources/14.png)
-
-![](./resources/15.png)
-
-![](./resources/16.png)
-
-![](./resources/17.png)
-
-![](./resources/18.png)
-
-![](./resources/19.png)
-
-![](./resources/20.png)
-
-![](./resources/21.png)
-
-![](./resources/c18.png)
-
-![](./resources/c19.png)
-
-![](./resources/c20.png)
-
-![](./resources/c21.png)
-
-![](./resources/c22.png)
+[Apache Kafka A-Z with Hands on Learning](https://www.udemy.com/course/apache-kafka-learnkarts/)

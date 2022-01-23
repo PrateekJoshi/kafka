@@ -47,4 +47,8 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myTopic --fr
 
 - You can specify which consumer group this consumer is associated with by giving CLA `--group myConsumerGroup`.
 
-## Kafka Producers : Writing Messages to Kafka
+## Get Cosnumer lag 
+
+```
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group <conumer_group_id>
+```
