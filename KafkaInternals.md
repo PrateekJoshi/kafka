@@ -84,6 +84,9 @@
 
 2) Kafka stores messages in disk not in RAM.
 
+3) Storage architecture: ![](resources/o77.png)
+
+
 ## Articles
 
 [What makes Apache Kafka so fast](https://www.freecodecamp.org/news/what-makes-apache-kafka-so-fast-a8d4f94ab145/)
