@@ -80,3 +80,48 @@ watch kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --gr
 ```
 ./zookeeper-shell.sh zookeeper
 ```
+
+- Get brokers registered with zookeeper
+
+```
+zookeeper-shell <zookeeper-ip>:<zookeeper-port> ls /brokers/ids
+```
+
+## Producer performance test
+
+```
+kafka-producer-perf-test \
+    --topic performance \
+    --num-records 1000000 \
+    --record-size 5000 \
+    --throughput -1 \
+    --producer-props \
+    bootstrap.servers=kafka-1:19092 \
+    <VARIABLE_HERE>
+```
+
+Example :
+
+```
+kafka-producer-perf-test \
+	--topic performance \
+	--num-records 1000000 \
+	--record-size 5000 \
+	--throughput -1 \
+	--producer-props \
+	bootstrap.servers=kafka-1:19092 \
+	acks=all \
+    batch.size=400000 \
+    linger.ms=500
+```
+
+## Consumer performance test
+
+```
+kafka-consumer-perf-test \
+        --topic performance \
+        --broker-list kafka-1:19092 \
+        --messages 1000000 \
+        --fetch-size 500000 \
+        --timeout 10000000
+```
