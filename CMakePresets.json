@@ -1,0 +1,29 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "base",
+            "binaryDir": "${sourceDir}/build",
+            "displayName": "Unix Makefiles",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_VERBOSE_MAKEFILE": true,
+                "CMAKE_TOOLCHAIN_FILE": "/home/prateek/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_BUILD_TYPE":"Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "release",
+            "configurePreset": "base",
+            "configuration": "Release"
+        },
+        {
+            "name": "debug",
+            "configurePreset": "base",
+            "configuration": "Debug"
+        }
+    ],
+    "testPresets": []
+}
